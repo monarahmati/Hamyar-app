@@ -29,19 +29,19 @@ const Item = styled(Paper)(({ theme }) => ({
         <Grid container xs={12}>
 
             
-                    <Typography  component='h2' variant='h6' fontSize='1rem' fontWeight={500} padding={1}>
+                    <Typography  component='h3' variant='h6' fontSize='0.8rem' fontWeight={500} padding={1}>
                      با کسب تمامی مدال ها میتونین جایزه ویژه همیار زبان را درب منزل دریافت کنید.
                      پس از تکمیل مدال ها روی دکمه دریافت جایزه (در پایین صفحه ) کلیک کنید.
                     </Typography>
 
                     <Box sx={{ width: '100%' }}>
-                        <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} sx={{padding:'2rem'}}>
+                        <Grid container rowSpacing={1}  sx={{padding:'1.2rem'}}>
                              <Grid item xs={12}>
                                <Item  sx={{height:'40px' ,borderColor:'#000', bgcolor:'#e0e0e0' , display:'flex'}}>
                                 <PlayArrowIcon sx={{ fontSize:'3rem' }} />
                                 <Typography  textAlign='right' marginRight='1rem' >
                                   <Typography fontSize='1rem'  fontWeight={900} sx={{ color:'#000'}} >مدال امتیاز</Typography>
-                                  <Typography sx={{ fontSize:'12px' , color:'#000' }}> به همیار زبان در گوگل پلی امتیاز دهید</Typography>
+                                  <Typography sx={{ fontSize:'10px' , color:'#000' }}> به همیار زبان در گوگل پلی امتیاز دهید</Typography>
                                 </Typography>
                                </Item>
                              </Grid>
@@ -50,7 +50,7 @@ const Item = styled(Paper)(({ theme }) => ({
                                <InstagramIcon sx={{ fontSize:'2.5rem' }} />
                                 <Typography  textAlign='right' marginRight='1rem' >
                                   <Typography fontSize='1rem'  fontWeight={900} sx={{ color:'#000'}} >مدال شبکه اجتماعی </Typography>
-                                  <Typography sx={{ fontSize:'12px' , color:'#000' }}> اینستگرام همیار زبان را دنبال کنید </Typography>
+                                  <Typography sx={{ fontSize:'10px' , color:'#000' }}> اینستگرام همیار زبان را دنبال کنید </Typography>
                                 </Typography> 
                                </Item>
                              </Grid>
@@ -68,7 +68,7 @@ const Item = styled(Paper)(({ theme }) => ({
                                <WorkspacePremiumIcon sx={{ fontSize:'2.5rem' }} />
                                 <Typography  textAlign='right' marginRight='1rem' >
                                   <Typography fontSize='1rem'  fontWeight={900} sx={{ color:'#000'}} >  مدال سطح  A1  </Typography>
-                                  <Typography sx={{ fontSize:'12px' , color:'#000' }}> سطح A1 را بگذرانید </Typography>
+                                  <Typography sx={{ fontSize:'10px' , color:'#000' }}> سطح A1 را بگذرانید </Typography>
                                 </Typography>
                                </Item>
                              </Grid>
@@ -95,7 +95,7 @@ const Item = styled(Paper)(({ theme }) => ({
                                <WorkspacePremiumIcon sx={{ fontSize:'2.5rem' }} />
                                 <Typography  textAlign='right' marginRight='1rem' >
                                   <Typography fontSize='1rem'  fontWeight={900} sx={{ color:'#000'}} >  مدال سطح  B2 </Typography>
-                                  <Typography sx={{ fontSize:'12px' , color:'#000' }}>  سطح B2 را بگذرانید </Typography>
+                                  <Typography sx={{ fontSize:'10px' , color:'#000' }}>  سطح B2 را بگذرانید </Typography>
                                 </Typography>
                                </Item>
                              </Grid>
@@ -104,7 +104,7 @@ const Item = styled(Paper)(({ theme }) => ({
                                <WorkspacePremiumIcon sx={{ fontSize:'2.5rem' }} />
                                 <Typography  textAlign='right' marginRight='1rem' >
                                   <Typography fontSize='1rem'  fontWeight={900} sx={{ color:'#000'}} >  مدال سطح  C1  </Typography>
-                                  <Typography sx={{ fontSize:'12px' , color:'#000' }}>   سطح C1 را بگذرانید  </Typography>
+                                  <Typography sx={{ fontSize:'10px' , color:'#000' }}>   سطح C1 را بگذرانید  </Typography>
                                 </Typography>
                                </Item>
                              </Grid>
@@ -113,7 +113,7 @@ const Item = styled(Paper)(({ theme }) => ({
                                <WorkspacePremiumIcon sx={{ fontSize:'2.5rem' }} />
                                 <Typography  textAlign='right' marginRight='1rem' >
                                   <Typography fontSize='1rem'  fontWeight={900} sx={{ color:'#000'}} >  مدال سطح  C2  </Typography>
-                                  <Typography sx={{ fontSize:'12px' , color:'#000' }}>  سطح C2 را بگذرانید  </Typography>
+                                  <Typography sx={{ fontSize:'10px' , color:'#000' }}>  سطح C2 را بگذرانید  </Typography>
                                 </Typography>
                                </Item>
                              </Grid>
@@ -122,7 +122,7 @@ const Item = styled(Paper)(({ theme }) => ({
                                <DraftsIcon sx={{ fontSize:'2.5rem' }} />
                                 <Typography  textAlign='right' marginRight='1rem' >
                                   <Typography fontSize='1rem'  fontWeight={900} sx={{ color:'#000'}} > مدال معرفی </Typography>
-                                  <Typography sx={{ fontSize:'12px' , color:'#000' }}> همیار زبان را به 5 نفر معرفی کنید  </Typography>
+                                  <Typography sx={{ fontSize:'10px' , color:'#000' }}> همیار زبان را به 5 نفر معرفی کنید  </Typography>
                                 </Typography>
                                </Item>
                              </Grid>
@@ -131,7 +131,7 @@ const Item = styled(Paper)(({ theme }) => ({
                                <FolderSpecialIcon sx={{ fontSize:'2.5rem' }} />
                                 <Typography  textAlign='right' marginRight='1rem' >
                                   <Typography fontSize='1rem'  fontWeight={900} sx={{ color:'#000'}} > مدال اشتراک </Typography>
-                                  <Typography sx={{ fontSize:'12px' , color:'#000' }}> اشتراک طلایی همیار زبان را تهیه کنید </Typography>
+                                  <Typography sx={{ fontSize:'10px' , color:'#000' }}> اشتراک طلایی همیار زبان را تهیه کنید </Typography>
                                 </Typography>
                                </Item>
                              </Grid>

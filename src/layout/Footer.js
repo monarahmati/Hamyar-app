@@ -18,45 +18,45 @@ export default function LabelBottomNavigation() {
 
   return (
 
-  <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 , zIndex:'100'}} elevation={3}>
-    <BottomNavigation position="fixed"  sx={{ width: '100%' , height:'90px', top:'20rem' , zIndex:'100' }} value={value} onChange={handleChange}>
+  <Paper sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 , zIndex:'200' , padding:'2px'}} elevation={3}>
+    <BottomNavigation position="fixed"  sx={{ width: '100%' , height:'60px', top:'1rem' , zIndex:'200' }} value={value} onChange={handleChange}>
      <Link to='/'  style={{textDecoration:'none' , color:'#6c6c6c' , marginLeft:'4rem'}}>
       <BottomNavigationAction
         label="Home"
         value="home"
-        icon={<OtherHousesOutlinedIcon sx={{color:'#6c6c6c', fontSize:'2rem'}}/>}
+        icon={<OtherHousesOutlinedIcon sx={{color:'#6c6c6c', fontSize:'1.8rem'}}/>}
       /> 
-        <Typography component='h5' variant='h5' fontSize='1rem'  marginLeft={3}  >
+        <Typography component='h5' variant='h5' fontSize='12px'  marginLeft='1.8rem'   marginTop='-10px' >
           Home
         </Typography>
      </Link>
-     <Link to='/books' style={{textDecoration:'none' , color:'#6c6c6c' ,  marginLeft:'0.5rem'}}>
+     <Link to='/books' style={{textDecoration:'none' , color:'#6c6c6c' ,  marginLeft:'-10px'}}>
       <BottomNavigationAction
         label="Books"
         value="books"
-        icon={<MenuBookOutlinedIcon sx={{color:'#6c6c6c', fontSize:'2rem' }}/>}
+        icon={<MenuBookOutlinedIcon sx={{color:'#6c6c6c', fontSize:'1.8rem' }}/>}
       />
-      <Typography component='h5' variant='h5' fontSize='1rem'   marginLeft='1.5rem' >
+      <Typography component='h5' variant='h5' fontSize='11px'   marginLeft='25px'   marginTop='-10px' >
           Books
       </Typography>
      </Link>   
-     <Link to='/plan' style={{textDecoration:'none' , color:'#6c6c6c' ,  marginLeft:'0.5rem'}}>
+     <Link to='/plan' style={{textDecoration:'none' , color:'#6c6c6c' ,  marginLeft:'-10px'}}>
       <BottomNavigationAction
         label="Plan"
         value="plan"
-        icon={<DateRangeOutlinedIcon sx={{color:'#6c6c6c', fontSize:'2rem'}} />}
+        icon={<DateRangeOutlinedIcon sx={{color:'#6c6c6c', fontSize:'1.8rem'}} />}
       />   
-      <Typography component='h5' variant='h5' fontSize='1rem' marginLeft='2rem'>
+      <Typography component='h5' variant='h5' fontSize='12px' marginLeft='2rem'  marginTop='-10px' >
           Plan
       </Typography>       
      </Link>
-     <Link to='/profile' style={{textDecoration:'none' , color:'#6c6c6c' ,  marginRight:'3rem'}}>
+     <Link to='/profile' style={{textDecoration:'none' , color:'#6c6c6c' ,  marginRight:'4rem', marginLeft:'-10px'}}>
       <BottomNavigationAction 
         label="Profile"
         value="profiale" 
-        icon={<PermIdentityOutlinedIcon  sx={{color:'#6c6c6c', fontSize:'2rem'}}/>}
+        icon={<PermIdentityOutlinedIcon  sx={{color:'#6c6c6c', fontSize:'1.8rem'}}/>}
       />
-      <Typography component='h5' variant='h5' fontSize='1rem'   marginLeft='1.6rem' >
+      <Typography component='h5' variant='h5' fontSize='12px'   marginLeft='1.7rem' marginTop='-10px' >
           Profile
       </Typography>      
      </Link>

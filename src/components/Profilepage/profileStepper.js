@@ -11,7 +11,7 @@ import StepConnector, { stepConnectorClasses } from '@mui/material/StepConnector
 
 const ColorlibConnector = styled(StepConnector)(({ theme }) => ({
   [`&.${stepConnectorClasses.alternativeLabel}`]: {
-    top: 21,
+    top: 12, width: '19rem',
   },
   [`&.${stepConnectorClasses.active}`]: {
     [`& .${stepConnectorClasses.line}`]: {
@@ -38,13 +38,13 @@ const ColorlibStepIconRoot = styled('span')(({ theme, ownerState }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? theme.palette.grey[700] : '#ccc',
   zIndex: 1,
   color: '#fff',
-  width: 35,
-  height: 35,
+  width: 25,
+  height: 25,
   display: 'flex',
   borderRadius: '50%',
   justifyContent: 'center',
   alignItems: 'center',
-  fontSize:'12px',
+  fontSize:'10px',
   fontWeight:'900',
   ...(ownerState.active && {
     backgroundImage:

@@ -44,9 +44,9 @@ const Mediums = () => {
             <Grid item xs={12} paddingTop={3} > 
                 <Swiper 
                 className="mySwiper"
-                slidesPerView={2}
+                slidesPerView={1.9}
                 centeredSlides={true}
-                spaceBetween={30}
+                spaceBetween={11}
                 grabCursor={true}
                 pagination={{
                   clickable: true,
@@ -54,21 +54,21 @@ const Mediums = () => {
                 modules={[Pagination]} >
 
                     <SwiperSlide variant={'h1'} align={'right'}>
-                    <Card sx={{ maxWidth: '200px'  , padding:'1rem' ,  borderRadius:'13px'}} >
+                    <Card sx={{ maxWidth: '300px'  , padding:'7px' ,  borderRadius:'13px', height:'210px' }} >
                         <CardActionArea>
                             <CardMedia
                                 sx={{ borderRadius:'20px'}}
                                 component="img"
                                 width="200px"
-                                height="240px"
+                                height="140px"
                                 image="https://media.graphassets.com/XRZqYJDQQrCKkFZcqnfj"
                                 alt="image1"
                             />
                                <CardContent>
-                                   <Typography component='h3' variant='h8' color="black">
+                                   <Typography paddingTop='1px' component='h3' variant='h8' color="black">
                                      {data.mediums[0].bookname}
                                    </Typography>
-                                   <Typography paddingTop={1} component='h3' variant='p' color="text.secondary">
+                                   <Typography paddingTop={1} paddingBottom={1} component='h3' variant='p' color="text.secondary">
                                      {data.mediums[0].author}
                                    </Typography>
                                </CardContent>
@@ -76,13 +76,13 @@ const Mediums = () => {
                     </Card>
                     </SwiperSlide>
                     <SwiperSlide   variant={'h6'} align={'right'}>
-                    <Card sx={{ maxWidth: '200px' , padding:'1rem'  ,  borderRadius:'13px'  }}>
+                    <Card sx={{ maxWidth: '200px' , padding:'7px'  ,  borderRadius:'13px' , height:'210px'  }}>
                         <CardActionArea >
                             <CardMedia 
                                 sx={{ borderRadius:'20px'}}               
                                 component="img"
                                 width="200px"
-                                height="240px"
+                                height="140px"
                                 image="https://media.graphassets.com/LfroXNQlTOiRywHG416p"
                                 alt="image2"
                             />
@@ -98,21 +98,21 @@ const Mediums = () => {
                     </Card>
                     </SwiperSlide>
                     <SwiperSlide   variant={'h6'} align={'right'}>
-                    <Card sx={{ maxWidth: '200px' , padding:'1rem'  ,  borderRadius:'13px' }}>
+                    <Card sx={{ maxWidth: '200px' , padding:'7px'  ,  borderRadius:'13px' , height:'210px' }}>
                         <CardActionArea>
                             <CardMedia
                                 sx={{ borderRadius:'20px'}}
                                 component="img"
                                 width="200px"
-                                height="240px"
+                                height="140px"
                                 image="https://media.graphassets.com/5gxCVkNkRVO4fLDeYTXe"
                                 alt="image3"
                             />
                                <CardContent>
-                                   <Typography component='h3' variant='h8' color="black">
+                                   <Typography component='h5' variant='h8' color="black">
                                      {data.mediums[2].bookname}
                                    </Typography>
-                                   <Typography paddingTop={2} component='h3' variant='p' color="text.secondary">
+                                   <Typography paddingTop='1px' component='h3' variant='p' color="text.secondary">
                                      {data.mediums[2].author}
                                    </Typography>
                                </CardContent>
@@ -120,21 +120,21 @@ const Mediums = () => {
                     </Card>
                     </SwiperSlide>
                     <SwiperSlide   variant={'h6'} align={'right'}>
-                    <Card sx={{ maxWidth: '200px' , padding:'1rem'  ,  borderRadius:'13px' }}>
+                    <Card sx={{ maxWidth: '200px' , padding:'7px'  ,  borderRadius:'13px' , height:'210px' }}>
                         <CardActionArea>
                             <CardMedia
                                 sx={{ borderRadius:'20px'}}
                                 component="img"
                                 width="200px"
-                                height="240px"
+                                height="140px"
                                 image="https://media.graphassets.com/q4mwSvoFTnilNOWLxiXJ"
                                 alt="image3"
                             />
                                <CardContent>
-                                   <Typography component='h3' variant='p' color="black">
+                                   <Typography component='h5' variant='p' color="black">
                                      {data.mediums[3].bookname}
                                    </Typography>
-                                   <Typography paddingTop={2} component='h3' variant='p' color="text.secondary">
+                                   <Typography paddingTop='4px' component='h3' variant='p' color="text.secondary">
                                      {data.mediums[3].author}
                                    </Typography>
                                </CardContent>

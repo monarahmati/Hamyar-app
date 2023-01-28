@@ -44,9 +44,9 @@ const Advanced = () => {
             <Grid item xs={12} paddingTop={3} > 
                 <Swiper 
                 className="mySwiper"
-                slidesPerView={2}
+                slidesPerView={1.9}
                 centeredSlides={true}
-                spaceBetween={30}
+                spaceBetween={11}
                 grabCursor={true}
                 pagination={{
                   clickable: true,
@@ -54,18 +54,18 @@ const Advanced = () => {
                 modules={[Pagination]} >
 
                     <SwiperSlide variant={'h1'} align={'right'}>
-                    <Card sx={{ maxWidth: '200px'  , padding:'1rem' ,  borderRadius:'13px'}} >
+                    <Card sx={{ maxWidth: '200px'  , padding:'7px' ,  borderRadius:'13px'  , height:'210px'}} >
                         <CardActionArea>
                             <CardMedia
                                 sx={{ borderRadius:'20px'}}
                                 component="img"
                                 width="200px"
-                                height="240px"
+                                height="140px"
                                 image= "https://media.graphassets.com/l1ephbbyRCmRmkOxLWiC"
                                 alt="image1"
                             />
                                <CardContent>
-                                   <Typography component='h3' variant='h8' color="black">
+                                   <Typography component='h4' variant='h8' color="black">
                                      {data.advancedlevels[0].bookname}
                                    </Typography>
                                    <Typography paddingTop={1} component='h3' variant='p' color="text.secondary">
@@ -76,13 +76,13 @@ const Advanced = () => {
                     </Card>
                     </SwiperSlide>
                     <SwiperSlide   variant={'h6'} align={'right'}>
-                    <Card sx={{ maxWidth: '200px' , padding:'1rem'  ,  borderRadius:'13px'  }}>
+                    <Card sx={{ maxWidth: '200px' , padding:'7px'  ,  borderRadius:'13px'  , height:'210px' }}>
                         <CardActionArea >
                             <CardMedia 
                                 sx={{ borderRadius:'20px'}}               
                                 component="img"
                                 width="200px"
-                                height="240px"
+                                height="140px"
                                 image= "https://media.graphassets.com/s8Ay5IS9CO8Y0QlDPriw"
                                 alt="image2"
                             />
@@ -98,18 +98,18 @@ const Advanced = () => {
                     </Card>
                     </SwiperSlide>
                     <SwiperSlide   variant={'h6'} align={'right'}>
-                    <Card sx={{ maxWidth: '200px' , padding:'1rem'  ,  borderRadius:'13px' }}>
+                    <Card sx={{ maxWidth: '200px' , padding:'7px'  ,  borderRadius:'13px' , height:'210px' }}>
                         <CardActionArea>
                             <CardMedia
                                 sx={{ borderRadius:'20px'}}
                                 component="img"
                                 width="200px"
-                                height="240px"
+                                height="140px"
                                 image= "https://media.graphassets.com/V6tcoQPSXmqtPZVHwaLk"
                                 alt="image3"
                             />
                                <CardContent>
-                                   <Typography component='h3' variant='p' color="black">
+                                   <Typography component='h4' variant='p' color="black">
                                      {data.advancedlevels[2].bookname}
                                    </Typography>
                                    <Typography paddingTop={1} component='h3' variant='p' color="text.secondary">
@@ -120,21 +120,21 @@ const Advanced = () => {
                     </Card>
                     </SwiperSlide>
                     <SwiperSlide   variant={'h6'} align={'right'}>
-                    <Card sx={{ maxWidth: '200px' , padding:'1rem'  ,  borderRadius:'13px' }}>
+                    <Card sx={{ maxWidth: '200px' , padding:'7px'  ,  borderRadius:'13px' , height:'210px' }}>
                         <CardActionArea>
                             <CardMedia
                                 sx={{ borderRadius:'20px'}}
                                 component="img"
                                 width="200px"
-                                height="240px"
+                                height="140px"
                                 image="https://media.graphassets.com/shxMybM1Q6iV97bOpbk7"
                                 alt="image3"
                             />
-                               <CardContent>
-                                   <Typography component='h4' variant='p' color="black">
+                               <CardContent >
+                                   <Typography paddingTop='1px' paddingBottom='5px' component='h4' variant='p' color="black">
                                      {data.advancedlevels[3].bookname}
                                    </Typography>
-                                   <Typography paddingTop={1} component='h3' variant='p' color="text.secondary">
+                                   <Typography paddingTop='1px' component='h3' variant='p' color="text.secondary">
                                      {data.advancedlevels[3].author}
                                    </Typography>
                                </CardContent>

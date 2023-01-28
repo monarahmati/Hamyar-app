@@ -11,7 +11,7 @@ const BooksSlider = () => {
     return (
 
         <Grid container xs={12}>
-            <Grid item xs={12} paddingTop={6}>
+            <Grid item xs={12} paddingTop={7}>
                <Swiper className="mySwiper">
                     <SwiperSlide align='center' width='100%'>
                     <Card sx={{ maxWidth: '500px' }}>
@@ -19,7 +19,7 @@ const BooksSlider = () => {
                             <CardMedia
                                 component="img"
                                 width="500px"
-                                height="250px"
+                                height="150px"
                                 image="https://media.graphassets.com/tyx0skPaS8uOsbplbZof"
                                 alt="image1"
                             />
@@ -32,7 +32,7 @@ const BooksSlider = () => {
                             <CardMedia
                                 component="img"
                                 width="500px"
-                                height="250px"
+                                height="150px"
                                 image="https://media.graphassets.com/SuzVB1MtQ5WE7P2V1W4B"
                                 alt="image2"
                             />
@@ -45,7 +45,7 @@ const BooksSlider = () => {
                             <CardMedia
                                 component="img"
                                 width="500px"
-                                height="250px"
+                                height="150px"
                                 image="https://media.graphassets.com/6xv9lX2GQAt54fPmS8ZL"
                                 alt="image3"
                                 />

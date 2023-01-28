@@ -40,43 +40,58 @@ const Profile = () => {
                         }}>
     
                         <CardHeader
-                          avatar={<Avatar sx={{ bgcolor:'#fafafa' , padding:2}}><PersonIcon sx={{ fontSize:'4rem' , color:'#e0e0e0' }}/></Avatar>}
-                          title={<Typography color='#ffff' padding={1} marginRight='1rem'>09185554433</Typography>}
-                          subheader={ <Button  variant="text"   sx={{borderRadius:'5rem' , marginRight:'1rem' , bgcolor:'#fafafa' , width:'150px' ,top:'5px', justifyContent:'space-between' , '&:hover': { backgroundColor: '#e0e0e0', opacity: [0.9, 0.8, 0.7] },}}>
-                                         <Typography color="#4caf50">تکمیل پروفایل </Typography>
-                                         <ArrowBackIosIcon sx={{ color:"#4caf50"}}/>
+                          avatar={<Avatar sx={{ bgcolor:'#fafafa' , padding:'6px'}}><PersonIcon sx={{ fontSize:'3rem' , color:'#e0e0e0' }}/></Avatar>}
+                          title={<Typography color='#ffff' fontSize='11px' padding='1px' marginRight='1.7rem'>09185554433</Typography>}
+                          subheader={ <Button  variant="text"   sx={{borderRadius:'5rem' , height:'22px', marginRight:'1rem' , bgcolor:'#fafafa' , width:'110px' ,top:'5px', justifyContent:'space-between' , '&:hover': { backgroundColor: '#e0e0e0', opacity: [0.9, 0.8, 0.7] },}}>
+                                         <Typography fontSize='12px' color="#4caf50">تکمیل پروفایل </Typography>
+                                         <ArrowBackIosIcon sx={{ fontSize:'12px' ,color:"#4caf50"}}/>
                                       </Button>}
                           paddingBottom='50rem'
                         />
                     </CardContent>
-                    <Card xs={12} sx={{ width: '21rem' ,margin:'10px', bgcolor:'#fafafa', alignItems:'center' , textAlign:'center', padding:'1.1rem' , zIndex:'110'}}>
+
+
+                    <Card 
+
+                    xs={12} 
+                    sx={{ 
+                    width: '15rem' ,
+                    margin:'10px', 
+                    bgcolor:'#fafafa', 
+                    alignItems:'center' , 
+                    textAlign:'center', 
+                    padding:'1.1rem' , 
+                    zIndex:'110'}}>
+
                        <ProfileStepper />         
                     </Card>
+
+
                  </Card>
-                 <Grid item  xs={12} spacing={1} sx={{display:'flex' , marginTop:'-2.7rem', justifyContent:'space-around' , paddingBottom:'2.5rem'}}>
-                    <Card dir='rtl' sx={{ width:'8.5rem', height:'8rem' , zIndex:'180', padding:'1rem' }}>
-                          <RedeemIcon sx={{ fontSize:'2.5rem' , color:"orange"}}/>
-                          <Typography component='h6' variant="h6" sx={{fontWidth:'900' , fontSize:'14px'}}>
+                 <Grid item  xs={12} spacing={2} sx={{display:'flex' , marginTop:'-2.7rem', justifyContent:'space-around' , paddingBottom:'2.5rem'}}>
+                    <Card dir='rtl' sx={{ width:'6.5rem', height:'6rem' , zIndex:'180', padding:'1rem' }}>
+                          <RedeemIcon sx={{ fontSize:'1.5rem' , color:"orange"}}/>
+                          <Typography component='h6' variant="h6" sx={{fontWidth:'900' , fontSize:'11px'}}>
                             با معرفی دوستان خود هدیه بگیرید
                           </Typography>
                           <Button  
                           variant="text"   
-                          sx={{borderRadius:'5rem' , bgcolor:'#05e900' , width:'110px',height:'25px' ,top:'5px', justifyContent:'space-between' , '&:hover': { backgroundColor: '#e0e0e0', opacity: [0.9, 0.8, 0.7] },}}>
-                                <Typography color="#fafafa">کد معرفی</Typography>
-                                <ArrowBackIosIcon sx={{ color:"#fafafa"}}/>
+                          sx={{borderRadius:'5rem' , bgcolor:'#05e900' , width:'100px',height:'20px' ,top:'5px', justifyContent:'space-between' , '&:hover': { backgroundColor: '#e0e0e0', opacity: [0.9, 0.8, 0.7] },}}>
+                                <Typography  sx={{ fontSize:'12px', color:"#fafafa"}} >کد معرفی</Typography>
+                                <ArrowBackIosIcon sx={{ fontSize:'15px', color:"#fafafa"}}/>
                           </Button>
                     </Card>
-                    <Card dir='rtl' sx={{ width:'8.5rem', height:'8rem', zIndex:'180', padding:'1rem' }}>
-                    <CircularDeterminate  sx={{ width:'5px', paddingBottom:'10px' , height:'7px' , fontSize:'1px', padding:'1px', color:"orange" , margin:'1px'}} />
-                          <Typography component='h6' variant="h6" fontWeight={900} sx={{fontWidth:'900' , fontSize:'14px' , paddingBottom:'15px'}}>
+                    <Card dir='rtl' sx={{ width:'6.5rem', height:'6rem', zIndex:'180', padding:'1rem' }}>
+                    <CircularDeterminate  sx={{ width:'10px', paddingBottom:'10px' , height:'7px' , fontSize:'1px', padding:'1px', color:"orange" , margin:'1px'}} />
+                          <Typography component='h6' variant="h6" fontWeight={900} sx={{fontWidth:'900' , fontSize:'11px' , paddingBottom:'2px'}}>
                                 اشتراک شما
                           </Typography>
 
                           <Button  
                           variant="text"   
-                          sx={{borderRadius:'5rem' , bgcolor:'#05e900' , width:'110px',height:'25px' ,top:'5px', justifyContent:'space-between' , '&:hover': { backgroundColor: '#e0e0e0', opacity: [0.9, 0.8, 0.7] },}}>
-                                <Typography color="#fafafa"> خرید اشتراک</Typography>
-                                <ArrowBackIosIcon sx={{ color:"#fafafa"}}/>
+                          sx={{borderRadius:'5rem' , bgcolor:'#05e900' , width:'100px',height:'20px' ,top:'5px', justifyContent:'space-between' , '&:hover': { backgroundColor: '#e0e0e0', opacity: [0.9, 0.8, 0.7] },}}>
+                                <Typography sx={{ fontSize:'11px', color:"#fafafa"}} > خرید اشتراک</Typography>
+                                <ArrowBackIosIcon sx={{ fontSize:'15px', color:"#fafafa"}}/>
                           </Button>
                     </Card>
                  </Grid>
@@ -84,21 +99,22 @@ const Profile = () => {
                        xs={12} 
                        sx={{ 
                        Width: '100%' , 
-                       height:'10px',
+                       height:'1px',
                        bgcolor:'#eeeeee' , 
-                       paddingBottom:'12rem', 
-                       paddingTop:'8rem',
+                       paddingBottom:'5rem', 
+                       paddingTop:'1rem',
 
                        }}>
                       
-                      <Avatar src='../PlanPage/img/f8f474fc-5458-4a1a-8aa4-4ac0a7dc9166.jpg'/>
                        
                  </Card>
                  <Card 
-                      dir='rtl'
+                       dir='rtl'
                        xs={12}  
                        sx={{
-                       margin:'1.5rem',
+                       marginTop:'1.5rem',
+                       marginLeft:'0.5rem',
+                       marginRight:'0.5rem',
                        borderRadius:'2rem',
                        bgcolor:'#fafafa' ,                    
                        Width: '100%' , 
@@ -107,11 +123,11 @@ const Profile = () => {
                       }}>
 
                     <CardHeader 
-                        sx={{bgcolor:'orange', padding:'1.2rem'}}
+                        sx={{bgcolor:'orange', padding:'1rem'}}
                         avatar={<SpaIcon sx={{color:'#fff'}}/>}
                         title={<Typography 
-                          fontWeight={900} 
-                          component='h3' 
+                          fontWeight={700} 
+                          component='h4' 
                           variant='h6'  
                           color='#ffff' 
                           padding='5px' 

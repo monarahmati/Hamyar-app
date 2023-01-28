@@ -9,13 +9,13 @@ import VpnKeyRoundedIcon from '@mui/icons-material/VpnKeyRounded';
 const header = () => {
     return (
         <AppBar position="fixed"  sx={{bgcolor:"#fff" , width:'100%' }}  >
-          <Toolbar >
+          <Toolbar sx={{display:'flex' , justifyContent:'space-between'}} >
             <IconButton
-              size="large"
+              size="small"
               edge="start"
               color="inherit"
               aria-label="menu"
-              sx={{ mr:28 }}
+              // sx={{ mr:17 }}
             >
               <MenuBar/>
             </IconButton>
