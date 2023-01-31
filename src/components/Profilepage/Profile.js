@@ -19,30 +19,30 @@ import SpaIcon from '@mui/icons-material/Spa';
 const Profile = () => {
     return (
         <Grid container xs={12}>
-            <Grid item xs={12} sx={{paddingBottom:'15rem'}} >  
+            <Grid item xs={12} sx={{paddingBottom:'10rem'}} >  
                 <Card 
                     xs={12} 
                     sx={{ 
                     maxWidth: '100%' , 
-                    bgcolor:'#05e900' , 
-                    paddingBottom:'7rem', 
+                    bgcolor:'#21c405' , 
+                    paddingBottom:'5rem', 
                     zIndex:'-90'
                     }}>
 
                     <CardContent 
                         dir='rtl'
-                        paddingBottom='50rem'
+                        paddingBottom='40rem'
                        sx={{ 
                          maxWidth: '99%',
                          width:'500px',
                          paddingTop:'5rem', 
-                         bgcolor:'#05e900'
+                         bgcolor:'#21c405'
                         }}>
     
                         <CardHeader
-                          avatar={<Avatar sx={{ bgcolor:'#fafafa' , padding:'6px'}}><PersonIcon sx={{ fontSize:'3rem' , color:'#e0e0e0' }}/></Avatar>}
+                          avatar={<Avatar   sx={{ bgcolor:'#fafafa' , padding:'6px'}}><PersonIcon sx={{ fontSize:'3rem' , color:'#e0e0e0' }}/></Avatar>}
                           title={<Typography color='#ffff' fontSize='11px' padding='1px' marginRight='1.7rem'>09185554433</Typography>}
-                          subheader={ <Button  variant="text"   sx={{borderRadius:'5rem' , height:'22px', marginRight:'1rem' , bgcolor:'#fafafa' , width:'110px' ,top:'5px', justifyContent:'space-between' , '&:hover': { backgroundColor: '#e0e0e0', opacity: [0.9, 0.8, 0.7] },}}>
+                          subheader={ <Button  variant="text"  sx={{borderRadius:'5rem' , height:'22px', marginRight:'1rem' , padding:'10px', bgcolor:'#fafafa' , width:'110px' ,top:'5px', justifyContent:'space-between' , '&:hover': { backgroundColor: '#e0e0e0', opacity: [0.9, 0.8, 0.7] },}}>
                                          <Typography fontSize='12px' color="#4caf50">تکمیل پروفایل </Typography>
                                          <ArrowBackIosIcon sx={{ fontSize:'12px' ,color:"#4caf50"}}/>
                                       </Button>}
@@ -54,42 +54,56 @@ const Profile = () => {
                     <Card 
 
                     xs={12} 
+                    alignItems='center'
+                    justifyContent='center'
                     sx={{ 
-                    width: '15rem' ,
-                    margin:'10px', 
+                    width: '90%' ,
+                    marginX:'15px', 
                     bgcolor:'#fafafa', 
                     alignItems:'center' , 
                     textAlign:'center', 
-                    padding:'1.1rem' , 
-                    zIndex:'110'}}>
+                    paddingBottom:'2.5rem' , 
+                    paddingTop:'1rem',
+                    zIndex:'110'
+                    }}>
 
-                       <ProfileStepper />         
+                       <ProfileStepper />  
+                       <Grid item sx={{paddingTop:'1rem'}} >
+                       <Typography variant='p' fontSize={12} fontWeight={600} sx={{paddingTop:'1rem'}} >
+                        سطح زبان شما
+                        </Typography>     
+                        </Grid>  
                     </Card>
 
 
                  </Card>
-                 <Grid item  xs={12} spacing={2} sx={{display:'flex' , marginTop:'-2.7rem', justifyContent:'space-around' , paddingBottom:'2.5rem'}}>
-                    <Card dir='rtl' sx={{ width:'6.5rem', height:'6rem' , zIndex:'180', padding:'1rem' }}>
+                 <Grid item  xs={12} spacing={2} sx={{display:'flex' , marginTop:'-1.7rem', justifyContent:'space-around' , paddingBottom:'2.5rem'}}>
+                    <Card  dir='rtl' sx={{ width:'6.5rem', height:'7.5rem' , zIndex:'180', padding:'1.1rem' }}>
                           <RedeemIcon sx={{ fontSize:'1.5rem' , color:"orange"}}/>
-                          <Typography component='h6' variant="h6" sx={{fontWidth:'900' , fontSize:'11px'}}>
+                          <Typography  variant="h6" sx={{fontWidth:'900' , fontSize:'11px'}}>
                             با معرفی دوستان خود هدیه بگیرید
                           </Typography>
                           <Button  
-                          variant="text"   
-                          sx={{borderRadius:'5rem' , bgcolor:'#05e900' , width:'100px',height:'20px' ,top:'5px', justifyContent:'space-between' , '&:hover': { backgroundColor: '#e0e0e0', opacity: [0.9, 0.8, 0.7] },}}>
+                          variant="text"  
+                          justifyContent='center'
+                          alignItems='center' 
+                          sx={{borderRadius:'5px' , padding:'7px', bgcolor:'#21c405' , width:'100%',height:'20px' ,top:'25px', justifyContent:'space-between' , '&:hover': { backgroundColor: '#e0e0e0', opacity: [0.9, 0.8, 0.7] },}}>
                                 <Typography  sx={{ fontSize:'12px', color:"#fafafa"}} >کد معرفی</Typography>
                                 <ArrowBackIosIcon sx={{ fontSize:'15px', color:"#fafafa"}}/>
                           </Button>
                     </Card>
-                    <Card dir='rtl' sx={{ width:'6.5rem', height:'6rem', zIndex:'180', padding:'1rem' }}>
+                    <Card dir='rtl' sx={{ width:'6.5rem', height:'7.5rem', zIndex:'180', padding:'1.1rem' }}>
                     <CircularDeterminate  sx={{ width:'10px', paddingBottom:'10px' , height:'7px' , fontSize:'1px', padding:'1px', color:"orange" , margin:'1px'}} />
                           <Typography component='h6' variant="h6" fontWeight={900} sx={{fontWidth:'900' , fontSize:'11px' , paddingBottom:'2px'}}>
                                 اشتراک شما
                           </Typography>
+                          <Typography variant='h6' sx={{fontSize:'12px'}}>
+                              شما اشتراکی ندارید
+                          </Typography>
 
                           <Button  
                           variant="text"   
-                          sx={{borderRadius:'5rem' , bgcolor:'#05e900' , width:'100px',height:'20px' ,top:'5px', justifyContent:'space-between' , '&:hover': { backgroundColor: '#e0e0e0', opacity: [0.9, 0.8, 0.7] },}}>
+                          sx={{borderRadius:'5px' , bgcolor:'#21c405' , width:'100%',height:'20px' ,top:'20px', justifyContent:'space-between' , '&:hover': { backgroundColor: '#e0e0e0', opacity: [0.9, 0.8, 0.7] },}}>
                                 <Typography sx={{ fontSize:'11px', color:"#fafafa"}} > خرید اشتراک</Typography>
                                 <ArrowBackIosIcon sx={{ fontSize:'15px', color:"#fafafa"}}/>
                           </Button>
@@ -115,11 +129,11 @@ const Profile = () => {
                        marginTop:'1.5rem',
                        marginLeft:'0.5rem',
                        marginRight:'0.5rem',
-                       borderRadius:'2rem',
+                       borderRadius:'0.5rem',
                        bgcolor:'#fafafa' ,                    
                        Width: '100%' , 
                        height:'800px',
-                       paddingBottom:'15rem', 
+                       paddingBottom:'21rem', 
                       }}>
 
                     <CardHeader 
@@ -127,13 +141,15 @@ const Profile = () => {
                         avatar={<SpaIcon sx={{color:'#fff'}}/>}
                         title={<Typography 
                           fontWeight={700} 
-                          component='h4' 
-                          variant='h6'  
+                          // component='h5' 
+                          // variant='h6'  
+                          fontSize={14}
                           color='#ffff' 
-                          padding='5px' 
-                          marginRight='1rem'>
+                          padding='4px' 
+                          marginRight='0.5rem'>
                                مدال های شما 
-                        </Typography>}/>
+                        </Typography>}
+                     />
                         <CardMedale/>
                  </Card>
             </Grid>

@@ -1,7 +1,7 @@
 import * as React from 'react';
 import PropTypes from 'prop-types';
 import CircularProgress from '@mui/material/CircularProgress';
-// import Typography from '@mui/material/Typography';
+import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 
 function CircularProgressWithLabel(props) {
@@ -21,9 +21,9 @@ function CircularProgressWithLabel(props) {
           justifyContent: 'center',
         }}
       >
-        {/* <Typography variant="h6" fontSize={9} component="div" color="black" >
+        <Typography variant="h6" fontSize={9} component="div" color="black" >
           {`${Math.round(0)}%`}
-        </Typography> */}
+        </Typography>
       </Box>
     </Box>
   );
@@ -50,5 +50,5 @@ export default function CircularStatic() {
     };
   }, []);
 
-  return <CircularProgressWithLabel value={progress} size={25} sx={{color:'#afacac' }}/>;
+  return <CircularProgressWithLabel value={progress} size={20} sx={{color:'#afacac' }}/>;
 }

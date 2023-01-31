@@ -6,15 +6,8 @@ import Avatar from '@mui/material/Avatar';
 import MenuItem from '@mui/material/MenuItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import Divider from '@mui/material/Divider';
-import { Typography } from '@mui/material';
-// import List from '@mui/material/List';
-// import ListItem from '@mui/material/ListItem';
-// import ListItemButton from '@mui/material/ListItemButton';
-// import ListItemText from '@mui/material/ListItemText';
-// import InboxIcon from '@mui/icons-material/MoveToInbox';
-// import MailIcon from '@mui/icons-material/Mail';
-// import MenuOpenIcon from '@mui/icons-material/MenuOpen';
-// import Hamburger from './Hamburger';
+import { Grid , Typography } from '@mui/material';
+
 
 // ===================== ICON =========================
 
@@ -54,16 +47,15 @@ export default function TemporaryDrawer() {
   const list = (anchor) => (
     <Box
       dir='rtl'
-      sx={{ width: anchor === 'top' || anchor === 'bottom' ? 'auto' : 250 }}
+      sx={{ width: anchor === 'Top' || anchor === 'bottom' ? '150px' : '210px' }}
       role="presentation"
       onClick={toggleDrawer(anchor, false)}
       onKeyDown={toggleDrawer(anchor, false)}
     >
 
-              <MenuItem padding={0} sx={{paddingBottom:0}}>
-
-<Avatar/>
-<MenuItem  sx={{marginRight: 1 , textAlign: 'left' , display:'grid' , gridColumn:"1rem"}} >
+    <MenuItem padding={0} sx={{paddingBottom:0}}>
+      <Avatar/>
+    <MenuItem  sx={{marginRight: 1 , textAlign: 'left' , display:'grid' , gridColumn:"1rem"}} >
 <Typography component='h7' variant='h8'>
   0918555555
 </Typography>
@@ -159,9 +151,12 @@ export default function TemporaryDrawer() {
     </Box>
   );
 
+const ConvertedToString = Object.toString(<Logout/>)
+console.log(ConvertedToString)
+
   return (
-    <div >
-      {['+'].map((anchor) => (
+    <Grid>
+      {[`${ConvertedToString}`].map((anchor) => (
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
           <Drawer
@@ -173,6 +168,8 @@ export default function TemporaryDrawer() {
           </Drawer>
         </React.Fragment>
       ))}
-    </div>
+    </Grid>
   );
 }
+
+

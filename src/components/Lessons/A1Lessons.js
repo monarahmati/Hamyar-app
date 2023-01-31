@@ -15,9 +15,9 @@ const A1Lessons = () => {
 
     console.log(data);  
     
-    if (loading) return <h3>LOADING...</h3>
+    if (loading) return <h3>LOADING...</h3>;
     
-    if (errors) return <h3>ERRORS....</h3>
+    if (errors) return <h3>ERRORS....</h3>;
     
 
 
@@ -37,7 +37,7 @@ const A1Lessons = () => {
                     textDecoration:"none"
                     }}>
                     
-                        <Avatar src={a1Lessons.coverphoto} sx={{marginRight: 2 , borderRadius: 2 , size:'small'}}/>
+                        <Avatar src={a1Lessons.coverPhoto} sx={{marginRight: 2 , borderRadius: 2 , size:'small'}}/>
                         <Grid item xs={12} sx={{  textAlign: 'left' }} >
                         <Typography component='h5' variant='p' color='black' fontSize='12px' >
                             {a1Lessons.lesson}

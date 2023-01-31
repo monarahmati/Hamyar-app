@@ -56,7 +56,8 @@ export default function AccountMenu() {
           </IconButton>
         </Tooltip>
       </Box>
-      <Menu
+      <Menu 
+        dir='rtl'
         anchorEl={anchorEl}
         id="account-menu"
         open={open}

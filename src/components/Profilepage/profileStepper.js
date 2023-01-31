@@ -101,7 +101,7 @@ const steps = ['', '', '', '' , ''];
 
 export default function CustomizedSteppers() {
   return (
-    <Stack sx={{ width: '100%' }} spacing={4}>
+    <Stack sx={{ width: '100%' }} spacing={8}>
       <Stepper alternativeLabel activeStep={1} connector={<ColorlibConnector />}>
         {steps.map((label) => (
           <Step key={label}>
